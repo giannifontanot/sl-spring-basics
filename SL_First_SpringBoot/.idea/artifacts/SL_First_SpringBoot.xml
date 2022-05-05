@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SL_First_SpringBoot">
+    <output-path>$PROJECT_DIR$/out/artifacts/SL_First_SpringBoot</output-path>
+    <root id="archive" name="SL_First_SpringBoot.war" />
+  </artifact>
+</component>
