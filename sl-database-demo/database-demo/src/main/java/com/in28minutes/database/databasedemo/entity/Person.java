@@ -3,6 +3,22 @@ package com.in28minutes.database.databasedemo.entity;
 import java.util.Date;
 
 public class Person {
+    private int id;
+    private String name;
+    private String location;
+    private Date birth_date;
+
+    public Person(){
+
+    }
+    public Person(int id, String name, String location, Date birth_date) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.location = location;
+        this.birth_date = birth_date;
+    }
+
     public int getId() {
         return id;
     }
@@ -16,25 +32,10 @@ public class Person {
     }
 
     public Date getBirthDate() {
-        return birthDate;
+        return birth_date;
     }
 
-    private int id;
-    private String name;
-    private String location;
-    private Date birthDate;
 
-    public Person(){
-
-    }
-
-    public Person(int id, String name, String location, Date birthDate) {
-        super();
-        this.id = id;
-        this.name = name;
-        this.location = location;
-        this.birthDate = birthDate;
-    }
 
     @Override
     public String toString() {
@@ -42,7 +43,7 @@ public class Person {
                 "id=" + this.id +
                 ", name='" + name + '\'' +
                 ", location='" + location + '\'' +
-                ", birthDate=" + birthDate +
+                ", birth_date=" + birth_date +
                 '}');
     }
 }
