@@ -25,11 +25,12 @@ public class JpaDemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        logger.info("All users -> {}", repository.findAll());
-        logger.info(" findById -> {}", repository.findById(1));
-        logger.info(" insert -> {}", repository.insert(new Person(1,"hugo", "Zamora", new Date())));
-        logger.info(" insert -> {}", repository.insert(new Person(2,"paco", "Berlin", new Date())));
-        logger.info(" update -> {}", repository.update(new Person(2,"Luis", "Zambia", new Date())));
-        logger.info(" deleteById -> {}", repository.deleteById(1));
+//        logger.info(" findById -> {}", repository.findById(1));
+//        logger.info(" insert -> {}", repository.insert(new Person(1,"hugo", "Zamora", new Date())));
+//        logger.info(" insert -> {}", repository.insert(new Person(2,"paco", "Berlin", new Date())));
+//        logger.info(" update -> {}", repository.update(new Person(2,"Luis", "Zambia", new Date())));
+//        logger.info(" deleteById -> {}", repository.deleteById(1));
+
+        logger.info("All users -> {}", repository.findAll());
     }
 }

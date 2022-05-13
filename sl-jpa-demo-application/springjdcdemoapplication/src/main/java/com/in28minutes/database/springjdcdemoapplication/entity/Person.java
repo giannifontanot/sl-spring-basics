@@ -7,6 +7,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table
+@NamedQuery(name="find_all_persons",query="select p from Person p")
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
